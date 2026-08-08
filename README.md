@@ -7,6 +7,7 @@
 ## 你会得到什么
 
 - `skills/dual-grid-windmill-creation`：和用户沟通、生图、验图、编译和生成地形刷的 Skill。
+- `skills/dual-grid-multi-terrain-brush`：将多张已编译风车母图聚合成一个共享 TileSet / Terrain Set 的多材质笔刷 Skill。
 - `skills/godot-tilemapdual-deployment`：Godot 与 TileMapDual 的安装/离线部署 Skill。
 - `assets/windmill-reference-clean.png`：固定风车图规范的无辅助线参考图。
 - 两个核心脚本：母图编译器、Godot TileMapDual 图集/场景构建器。
@@ -19,6 +20,8 @@
 4. 把原始 `1024x1024` PNG 交回 Agent。
 5. Agent 使用编译脚本生成 15-piece 中间图集。
 6. Agent 在 Godot 项目中运行构建脚本，得到 `TileMapDual` 节点、TileSet 和可绘制地形刷。
+
+多张不同材质母图时，先逐张走 `dual-grid-windmill-creation` 完成编译，再走 `dual-grid-multi-terrain-brush`。它们会成为同一个 TileSet 内的多个可选笔刷；没有额外绘制的材质交界图时，不会自动生成草地与雪地等不同材质之间的过渡边。
 
 ## 安装依赖
 

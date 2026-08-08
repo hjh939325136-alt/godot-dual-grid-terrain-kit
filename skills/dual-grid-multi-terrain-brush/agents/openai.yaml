@@ -1,0 +1,4 @@
+interface:
+  display_name: "TileMapDual Multi Terrain"
+  short_description: "Build shared multi-material terrain brushes."
+  default_prompt: "Build one shared TileMapDual brush from these windmill masters."

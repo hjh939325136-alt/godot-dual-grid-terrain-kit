@@ -16,7 +16,7 @@
 6. 将插件放入目标项目 addons/TileMapDual，并在 Godot 的 Project > Project Settings > Plugins 启用 TileMapDual。
 7. 保持像素图 nearest filtering；不要把 Dual Grid 当成 47-piece Blob Autotile。
 8. 后续生图必须使用 skills/dual-grid-windmill-creation/SKILL.md：先理解我的游戏玩法、风格和参考图，再提供无辅助线风车参考图与提示词；我会在陶泥儿美术工具里固定选 1K、1:1、Nano Banana。
-9. 收到我回传的 1024×1024 风车原图后，使用两个核心脚本生成 TileMapDual 4×4 图集、TileSet、TileMapDual 场景与可直接绘制的地形刷。
+9. 收到我回传的 1024×1024 风车原图后，使用两个核心脚本生成 TileMapDual 4×4 图集、TileSet、TileMapDual 场景与可直接绘制的地形刷。若一次提供两张或更多不同材质母图，额外使用 skills/dual-grid-multi-terrain-brush/SKILL.md：必须聚合成一个共享 TileSet / Terrain Set 0 和多个 atlas source，不得拆成多个互不相干的单地形场景；没有专门的材质交界图时，只作为多个独立笔刷，不承诺自动材质过渡。
 
 验收：在 Godot 编辑器用 TileMap 面板的 Tiles 标签绘制逻辑格，Dual Grid 显示层自动拼接；测试实心块、走廊、凹角、凸角、洞和对角格，不能有白底、缝隙、模糊或错误转角。
 ```
