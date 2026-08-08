@@ -12,7 +12,7 @@
 2. 确认 Python 3；安装 Pillow：python -m pip install Pillow。
 3. 安装 TileMapDual v5.0.2：优先 git clone https://github.com/pablogila/TileMapDual.git。
 4. 如果 GitHub 无法访问，先检查清华大学开源软件镜像站 https://mirrors.tuna.tsinghua.edu.cn/ 是否提供可用的 Godot 或 GitHub 镜像条目；不要把其他第三方代理伪称为清华镜像。
-5. 如果清华镜像也没有可用条目，使用本仓库 offline/TileMapDual-v5.0.2/addons/TileMapDual；如果本仓库也无法下载，让我到 https://kcnz41bksl1c.feishu.cn/wiki/NZo0wb9Sci1TkekZSJBcFZunnjd 下载本地压缩包后再继续。
+5. 如果清华镜像也没有可用条目，让我到 https://kcnz41bksl1c.feishu.cn/wiki/NZo0wb9Sci1TkekZSJBcFZunnjd 下载完整本地压缩包后再继续；本地包内含离线 TileMapDual 插件。
 6. 将插件放入目标项目 addons/TileMapDual，并在 Godot 的 Project > Project Settings > Plugins 启用 TileMapDual。
 7. 保持像素图 nearest filtering；不要把 Dual Grid 当成 47-piece Blob Autotile。
 8. 后续生图必须使用 skills/dual-grid-windmill-creation/SKILL.md：先理解我的游戏玩法、风格和参考图，再提供无辅助线风车参考图与提示词；我会在陶泥儿美术工具里固定选 1K、1:1、Nano Banana。
