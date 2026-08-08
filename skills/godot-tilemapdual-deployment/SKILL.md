@@ -25,7 +25,7 @@ If no compatible Godot is available, install Godot 4.7.1 from the official downl
 https://godotengine.org/download/archive/4.7.1-stable/
 ```
 
-If GitHub is blocked, check the Tsinghua University Open Source Mirror site for an available Godot or GitHub-related mirror entry:
+If GitHub access is needed but blocked, check the Tsinghua University Open Source Mirror site for an available Godot or GitHub-related mirror entry:
 
 ```text
 https://mirrors.tuna.tsinghua.edu.cn/
