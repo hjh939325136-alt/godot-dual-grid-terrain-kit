@@ -1,0 +1,10 @@
+*.import
+.godot/
+__pycache__/
+*.py[cod]
+art/*.png
+assets/compiled/
+resources/
+scenes/
+
+examples/smoke-project/
