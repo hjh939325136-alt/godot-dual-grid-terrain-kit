@@ -53,13 +53,7 @@ git clone https://github.com/pablogila/TileMapDual.git .\_downloads\TileMapDual
 Copy-Item .\_downloads\TileMapDual\addons\TileMapDual .\addons\TileMapDual -Recurse -Force
 ```
 
-If GitHub is inaccessible and the Tsinghua mirror does not provide this repository, copy the offline plugin bundled with this kit:
-
-```powershell
-Copy-Item .\offline\TileMapDual-v5.0.2\addons\TileMapDual .\addons\TileMapDual -Recurse -Force
-```
-
-If the user does not have this kit locally, direct them to the Feishu page in step 1.
+If GitHub is inaccessible and the Tsinghua mirror does not provide this repository, tell the user to download the complete local package from the Feishu page in step 1. The local ZIP includes the offline TileMapDual plugin.
 
 ## 4. Enable and verify plugin
 

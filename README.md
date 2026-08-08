@@ -8,9 +8,8 @@
 
 - `skills/dual-grid-windmill-creation`：和用户沟通、生图、验图、编译和生成地形刷的 Skill。
 - `skills/godot-tilemapdual-deployment`：Godot 与 TileMapDual 的安装/离线部署 Skill。
-- `assets/windmill-reference-guide.png`：固定风车图规范；带紫色辅助线，仅用于人工校验。
+- `assets/windmill-reference-clean.png`：固定风车图规范的无辅助线参考图。
 - 两个核心脚本：母图编译器、Godot TileMapDual 图集/场景构建器。
-- `offline/TileMapDual-v5.0.2`：离线插件副本，含上游 MIT 许可证。
 
 ## 快速流程
 
@@ -29,7 +28,7 @@
 - Python 3 和 Pillow：`python -m pip install Pillow`
 - TileMapDual `v5.0.2`。
 
-详情见 `skills/godot-tilemapdual-deployment/SKILL.md`。
+详情见 `skills/godot-tilemapdual-deployment/SKILL.md`。离线插件和完整包不在公开仓库中，网络部署失败时按部署 Skill 下载本地 ZIP。
 
 ## 编译母图
 
@@ -63,7 +62,5 @@ godot --headless --path . --script res://tools/build_tilemapdual_scene.gd
 - TileMapDual 的世界图默认从 `Tiles` 面板绘制；Godot 普通 `Terrains` 页为空不代表插件失效。
 
 ## 离线与许可
-
-`offline/TileMapDual-v5.0.2` 来自 [pablogila/TileMapDual](https://github.com/pablogila/TileMapDual)，版本 `v5.0.2`，MIT License，版权归 Pablo Gila-Herranz。详见 `LICENSES/TileMapDual-MIT.txt`。
 
 本仓库其他文档和脚本采用 [MIT License](LICENSE)。
